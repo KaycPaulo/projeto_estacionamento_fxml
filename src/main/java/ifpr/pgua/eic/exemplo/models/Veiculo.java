@@ -1,5 +1,6 @@
 package ifpr.pgua.eic.exemplo.models;
 
+import javax.print.DocFlavor.STRING;
 
 public class Veiculo {
     private String placa;
@@ -89,6 +90,11 @@ public class Veiculo {
             return true;
         }
         return false;
+    }
+
+    public String toString()
+    {
+        return placa;
     }
     
 }
